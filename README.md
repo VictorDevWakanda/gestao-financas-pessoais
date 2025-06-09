@@ -6,7 +6,7 @@ Sua inteligência financeira em um aplicativo desktop moderno, robusto e automat
 
 ## ✨ Visão Geral
 
-O **Gestor de Finanças Pessoais** nasceu da necessidade de tornar o controle financeiro acessível, seguro e inteligente. Inspirado na experiência de João, que precisava monitorar e aprimorar seus hábitos financeiros, o aplicativo oferece uma solução prática para registrar, analisar e automatizar a gestão das suas finanças pessoais.
+O **Gestor de Finanças Pessoais** nasceu da necessidade de tornar o controle financeiro acessível, seguro e inteligente. Inspirado na experiência de Wakanderes, que precisava monitorar e aprimorar seus hábitos financeiros, o aplicativo oferece uma solução prática para registrar, analisar e automatizar a gestão das suas finanças pessoais.
 
 ---
 
