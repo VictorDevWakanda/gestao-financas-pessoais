@@ -30,6 +30,46 @@ O **Gestor de Finanças Pessoais** nasceu da necessidade de tornar o controle fi
 
 ---
 
+## Funcionalidades Avançadas e Diferenciais
+
+- 🚀 **Integração com Bancos e Cartões**  
+  Importe transações automaticamente usando integração bancária (open finance), facilitando o acompanhamento em tempo real.
+
+- 🎯 **Controle de Metas Financeiras**  
+  Defina objetivos financeiros (ex: economizar para uma viagem) e acompanhe o progresso de cada meta.
+
+- 💸 **Planejamento de Orçamento Mensal**  
+  Planeje orçamentos por categoria e receba alertas ao se aproximar dos limites definidos.
+
+- 🔁 **Gestão de Assinaturas e Despesas Recorrentes**  
+  Identifique, controle e receba avisos sobre assinaturas e despesas periódicas.
+
+- 📷 **Reconhecimento Inteligente de Notas Fiscais**  
+  Registre gastos automaticamente ao fotografar notas fiscais/recibos (OCR).
+
+- 📊 **Dashboards Personalizáveis**  
+  Monte seu painel de indicadores e gráficos conforme suas preferências.
+
+- 📈 **Módulo de Investimentos**  
+  Acompanhe investimentos em ações, fundos, criptomoedas, e receba sugestões baseadas no seu perfil.
+
+- 🎓 **Educação Financeira Integrada**  
+  Tenha acesso a dicas, artigos, vídeos e quizzes de educação financeira na plataforma.
+
+- 👨‍👩‍👧‍👦 **Compartilhamento de Contas**  
+  Permita que famílias, casais ou grupos gerenciem finanças juntos, com diferentes permissões de acesso.
+
+- 🎨 **Modo Escuro/Claro e Personalização Visual**  
+  Escolha entre temas e personalize o visual da aplicação.
+
+- ☁️ **Backup Automático e Sincronização Multi-dispositivo**  
+  Sincronize e faça backup dos dados na nuvem, acessando de qualquer dispositivo.
+
+- 🤖 **Assistente Financeiro com IA**  
+  Tire dúvidas, receba sugestões e interaja com um assistente virtual inteligente (texto ou voz).
+
+---
+
 ## 📦 Empacotamento e Distribuição
 
 Para garantir uma experiência profissional e prática desde a instalação até a atualização, seguimos os seguintes passos:
