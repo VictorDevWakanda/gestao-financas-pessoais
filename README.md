@@ -6,7 +6,7 @@ Sua inteligência financeira em um aplicativo desktop moderno, robusto e automat
 
 ## ✨ Visão Geral
 
-O **Gestor de Finanças Pessoais** nasceu da necessidade de tornar o controle financeiro acessível, seguro e inteligente. Inspirado na experiência de Wakanderes, que precisava monitorar e aprimorar seus hábitos financeiros, o aplicativo oferece uma solução prática para registrar, analisar e automatizar a gestão das suas finanças pessoais.
+O **Gestor de Finanças Pessoais** nasceu da necessidade de tornar o controle financeiro acessível, seguro e inteligente. Inspirado na experiência de Wakanderes, que precisava monitorar e aprimorar sua vida financeira, o projeto evoluiu para abranger todas as etapas da jornada do usuário rumo à independência financeira.
 
 ---
 
@@ -134,7 +134,19 @@ pipeline {
 
 ## 💡 História do Usuário
 
-Em um mundo onde cada centavo conta, o Gestor de Finanças Pessoais foi criado para ajudar pessoas como João a monitorar gastos, eliminar desperdícios e tomar decisões financeiras mais conscientes. A integração com WhatsApp e relatórios inteligentes garantem que o usuário permaneça informado e no controle de suas finanças — de forma simples, automatizada e eficiente.
+Em um mundo onde cada centavo conta, o Gestor de Finanças Pessoais foi criado para ajudar pessoas como João a monitorar gastos, eliminar desperdícios e tomar decisões financeiras mais conscientes.
+
+João, como muitos brasileiros, sempre teve dificuldades para acompanhar seus gastos e planejar o futuro financeiro. Cansado de planilhas confusas e aplicativos limitados, ele encontrou no Gestor de Finanças Pessoais uma solução moderna, automatizada e segura.
+
+Ao instalar o aplicativo, João rapidamente conectou suas contas bancárias e cartões, permitindo que todas as transações fossem importadas automaticamente. Ele começou a registrar receitas, despesas e até fotografar notas fiscais, aproveitando o OCR para nunca mais esquecer um gasto.
+
+Com gráficos interativos, João visualizou seus hábitos de consumo, identificou oportunidades de economia e, graças às sugestões inteligentes do sistema, adotou práticas mais saudáveis para o bolso. Definiu metas, como economizar para uma viagem, e acompanhou o progresso em tempo real.
+
+Ao receber notificações via WhatsApp e e-mail sobre gastos acima do orçamento, assinaturas prestes a vencer ou investimentos com desempenho fora do esperado, João se sentiu mais no controle do seu dinheiro. A família toda pôde participar, cada um com permissões diferentes, tornando o planejamento financeiro coletivo mais fácil.
+
+A personalização visual, o modo escuro, o acesso a conteúdos de educação financeira e o assistente inteligente por IA completaram a experiência. E João nunca mais se preocupou com perda de dados: backups automáticos garantiram a segurança das informações e a sincronização entre dispositivos.
+
+O Gestor de Finanças Pessoais não apenas ajudou João a eliminar desperdícios, mas também o empoderou para tomar decisões mais conscientes, construir patrimônio e alcançar seus sonhos.
 
 ---
 
