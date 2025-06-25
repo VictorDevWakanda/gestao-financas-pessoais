@@ -1,5 +1,6 @@
 package com.financas.gestao.gestao_financas.usuario.domain;
 
+import com.financas.gestao.gestao_financas.usuario.application.api.UsuarioRequest;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -36,7 +37,7 @@ public class Usuario {
     private BigDecimal saldo = BigDecimal.ZERO;
     private StatusCadastro statusCadastro;
 
-    public Usuario(String cpf, LocalDate dataNascimento, String email, String nome, BigDecimal saldo, String senha, StatusCadastro statusCadastro, String telefone) {
+    public Usuario(UsuarioRequest usuarioRequest) {
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
         this.email = email;
