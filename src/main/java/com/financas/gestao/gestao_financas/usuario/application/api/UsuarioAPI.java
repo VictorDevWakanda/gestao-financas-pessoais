@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@RequestMapping("/alimento")
+@RequestMapping("/usuario")
 public interface UsuarioAPI {
 
     @PostMapping
