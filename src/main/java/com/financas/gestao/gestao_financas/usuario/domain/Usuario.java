@@ -37,7 +37,6 @@ public class Usuario {
     private StatusCadastro statusCadastro;
 
     public Usuario(String cpf, LocalDate dataNascimento, String email, String nome, BigDecimal saldo, String senha, StatusCadastro statusCadastro, String telefone) {
-        this.idUsuario = UUID.randomUUID();
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
         this.email = email;
