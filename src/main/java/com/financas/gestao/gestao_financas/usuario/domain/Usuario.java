@@ -1,13 +1,11 @@
 package com.financas.gestao.gestao_financas.usuario.domain;
 
 import com.financas.gestao.gestao_financas.usuario.application.api.UsuarioRequest;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.hibernate.validator.constraints.br.CPF;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.index.Indexed;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -16,17 +14,19 @@ import java.util.UUID;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @AllArgsConstructor
-@Document(collection = "usuarios")
+@Entity
 public class Usuario {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(columnDefinition = "uuid", name = "id_usuario")
     private UUID idUsuario;
     @NotBlank
     private String nome;
     @NotNull
     private LocalDate dataNascimento;
     @CPF(message = "O CPF informado é inválido.")
-    @Indexed(unique = true)
+    @Column(unique = true)
     private String cpf;
     private String telefone;
     @NotBlank
@@ -38,13 +38,11 @@ public class Usuario {
     private StatusCadastro statusCadastro;
 
     public Usuario(UsuarioRequest usuarioRequest) {
-        this.cpf = cpf;
-        this.dataNascimento = dataNascimento;
-        this.email = email;
-        this.nome = nome;
-        this.saldo = saldo != null ? saldo : BigDecimal.ZERO;
-        this.senha = senha;
-        this.statusCadastro = statusCadastro;
-        this.telefone = telefone;
+        this.cpf = usuarioRequest.getCpf();
+        this.dataNascimento = usuarioRequest.getDataNascimento();
+        this.email = usuarioRequest.getEmail();
+        this.nome = usuarioRequest.getNome();
+        this.senha = usuarioRequest.getSenha();
+        this.telefone = usuarioRequest.getTelefone();
     }
 }

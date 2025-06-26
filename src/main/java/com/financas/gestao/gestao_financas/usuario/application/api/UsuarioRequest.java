@@ -22,7 +22,6 @@ public class UsuarioRequest {
     LocalDate dataNascimento;
 
     @NotBlank(message = "O CPF é obrigatório.")
-    @Pattern(regexp = "\\d{11}", message = "O CPF deve conter exatamente 11 dígitos numéricos.")
     String cpf;
 
     @Pattern(regexp = "\\d{10,15}", message = "O telefone deve conter entre 10 e 15 dígitos.")
