@@ -18,4 +18,9 @@ public interface UsuarioAPI {
     @ResponseStatus(code = HttpStatus.OK)
     UsuarioDetalhado getUsuario(@PathVariable UUID idUsuario);
 
+    @PatchMapping(value = "/{idUsuario}")
+    @ResponseStatus(code = HttpStatus.NO_CONTENT)
+    void patchUsuario(@PathVariable UUID idUsuario,
+                      @Valid @RequestBody UsuarioAlteracaoRequest usuarioAlteracaoRequest);
+
 }

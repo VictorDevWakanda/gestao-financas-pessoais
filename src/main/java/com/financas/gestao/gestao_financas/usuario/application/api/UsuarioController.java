@@ -29,4 +29,13 @@ public class UsuarioController implements UsuarioAPI{
         log.info("[finish] UsuarioController - getUsuario");
         return usuarioDetalhado;
     }
+
+    @Override
+    public void patchUsuario(UUID idUsuario, UsuarioAlteracaoRequest usuarioAlteracaoRequest) {
+        log.info("[start] UsuarioController - patchUsuario");
+        log.info("[idUsuario] {}", idUsuario);
+        usuarioService.patcAlteracaoUsuario(idUsuario, usuarioAlteracaoRequest);
+        log.info("[finish] UsuarioController - patchUsuario");
+
+    }
 }

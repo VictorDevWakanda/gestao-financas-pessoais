@@ -1,5 +1,6 @@
 package com.financas.gestao.gestao_financas.usuario.application.service;
 
+import com.financas.gestao.gestao_financas.usuario.application.api.UsuarioAlteracaoRequest;
 import com.financas.gestao.gestao_financas.usuario.application.api.UsuarioDetalhado;
 import com.financas.gestao.gestao_financas.usuario.application.api.UsuarioRequest;
 import com.financas.gestao.gestao_financas.usuario.application.api.UsuarioResponse;
@@ -31,5 +32,10 @@ public class UsuarioApplicatioService implements UsuarioService{
         Usuario usuario = usuarioRepository.buscaUsuarioPorId(idUsuario);
         log.info("[finish] UsuarioApplicatioService - getUsuarioId");
         return new UsuarioDetalhado(usuario);
+    }
+
+    @Override
+    public void patcAlteracaoUsuario(UUID idUsuario, UsuarioAlteracaoRequest usuarioAlteracaoRequest) {
+
     }
 }
