@@ -38,4 +38,12 @@ public class UsuarioInfraRepository implements UsuarioRepository {
         log.info("[finish] UsuarioInfraRepository - buscaUsuarioPorId");
         return usuario;
     }
+
+    @Override
+    public void deleteUsuario(Usuario usuario) {
+        log.info("[start] UsuarioInfraRepository - deleteUsuario");
+        usuarioSpringDataJPARepository.delete(usuario);
+        log.info("[finish] UsuarioInfraRepository - deleteUsuario");
+
+    }
 }
