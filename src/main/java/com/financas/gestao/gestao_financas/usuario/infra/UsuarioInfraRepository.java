@@ -9,6 +9,8 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Repository;
 
+import java.util.UUID;
+
 @Repository
 @Log4j2
 @RequiredArgsConstructor
@@ -28,4 +30,12 @@ public class UsuarioInfraRepository implements UsuarioRepository {
         return usuario;
     }
 
+    @Override
+    public Usuario buscaUsuarioPorId(UUID idUsuario) {
+        log.info("[start] UsuarioInfraRepository - buscaUsuarioPorId");
+        Usuario usuario = usuarioSpringDataJPARepository.findById(idUsuario)
+                .orElseThrow(() -> APIException.build(HttpStatus.NOT_FOUND, "Usuario não encontrado!"));
+        log.info("[finish] UsuarioInfraRepository - buscaUsuarioPorId");
+        return usuario;
+    }
 }

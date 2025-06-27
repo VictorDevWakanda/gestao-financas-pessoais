@@ -28,7 +28,8 @@ public class UsuarioApplicatioService implements UsuarioService{
     @Override
     public UsuarioDetalhado getUsuarioId(UUID idUsuario) {
         log.info("[start] UsuarioApplicatioService - getUsuarioId");
+        Usuario usuario = usuarioRepository.buscaUsuarioPorId(idUsuario);
         log.info("[finish] UsuarioApplicatioService - getUsuarioId");
-        return null;
+        return new UsuarioDetalhado(usuario);
     }
 }
