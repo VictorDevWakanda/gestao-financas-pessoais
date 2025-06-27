@@ -36,6 +36,11 @@ public class UsuarioApplicatioService implements UsuarioService{
 
     @Override
     public void patcAlteracaoUsuario(UUID idUsuario, UsuarioAlteracaoRequest usuarioAlteracaoRequest) {
+        log.info("[start] UsuarioApplicatioService - patcAlteracaoUsuario");
+        Usuario usuario = usuarioRepository.buscaUsuarioPorId(idUsuario);
+        usuario.altera(usuarioAlteracaoRequest);
+        usuarioRepository.salva(usuario);
+        log.info("[finish] UsuarioApplicatioService - patcAlteracaoUsuario");
 
     }
 }

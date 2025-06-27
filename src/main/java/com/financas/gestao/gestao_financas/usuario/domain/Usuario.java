@@ -1,5 +1,6 @@
 package com.financas.gestao.gestao_financas.usuario.domain;
 
+import com.financas.gestao.gestao_financas.usuario.application.api.UsuarioAlteracaoRequest;
 import com.financas.gestao.gestao_financas.usuario.application.api.UsuarioRequest;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -44,5 +45,12 @@ public class Usuario {
         this.nome = usuarioRequest.getNome();
         this.senha = usuarioRequest.getSenha();
         this.telefone = usuarioRequest.getTelefone();
+    }
+
+    public void altera(UsuarioAlteracaoRequest usuarioAlteracaoRequest) {
+        this.nome = usuarioAlteracaoRequest.getNome();
+        this.email = usuarioAlteracaoRequest.getEmail();
+        this.dataNascimento = usuarioAlteracaoRequest.getDataNascimento();
+        this.telefone = usuarioAlteracaoRequest.getTelefone();
     }
 }
