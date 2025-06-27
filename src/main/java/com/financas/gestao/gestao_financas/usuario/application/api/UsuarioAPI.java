@@ -23,4 +23,8 @@ public interface UsuarioAPI {
     void patchUsuario(@PathVariable UUID idUsuario,
                       @Valid @RequestBody UsuarioAlteracaoRequest usuarioAlteracaoRequest);
 
+    @DeleteMapping(value = "/{idUsuario}")
+    @ResponseStatus(code = HttpStatus.NO_CONTENT)
+    void deleteUsuario(@PathVariable UUID idUsuario);
+
 }

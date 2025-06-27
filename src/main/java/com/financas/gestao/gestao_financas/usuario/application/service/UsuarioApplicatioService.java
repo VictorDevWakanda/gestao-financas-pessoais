@@ -43,4 +43,10 @@ public class UsuarioApplicatioService implements UsuarioService{
         log.info("[finish] UsuarioApplicatioService - patcAlteracaoUsuario");
 
     }
+
+    @Override
+    public void deleteUsuario(UUID idUsuario) {
+        log.info("[start] UsuarioApplicatioService - deleteUsuario");
+        log.info("[finish] UsuarioApplicatioService - deleteUsuario");
+    }
 }

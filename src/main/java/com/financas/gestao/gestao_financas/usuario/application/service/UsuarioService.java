@@ -11,4 +11,5 @@ public interface UsuarioService {
     UsuarioResponse criaUsuario(UsuarioRequest usuarioRequest);
     UsuarioDetalhado getUsuarioId(UUID idUsuario);
     void patcAlteracaoUsuario(UUID idUsuario, UsuarioAlteracaoRequest usuarioAlteracaoRequest);
+    void deleteUsuario(UUID idUsuario);
 }
