@@ -1,4 +1,4 @@
-package com.financas.gestao.gestao_financas.usuario.handler;
+package com.financas.gestao.gestao_financas.handler;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

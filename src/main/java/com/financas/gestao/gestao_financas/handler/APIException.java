@@ -1,4 +1,4 @@
-package com.financas.gestao.gestao_financas.usuario.handler;
+package com.financas.gestao.gestao_financas.handler;
 
 import lombok.Getter;
 import lombok.extern.log4j.Log4j2;

@@ -2,7 +2,7 @@ package com.financas.gestao.gestao_financas.usuario.infra;
 
 import com.financas.gestao.gestao_financas.usuario.application.repository.UsuarioRepository;
 import com.financas.gestao.gestao_financas.usuario.domain.Usuario;
-import com.financas.gestao.gestao_financas.usuario.handler.APIException;
+import com.financas.gestao.gestao_financas.handler.APIException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.dao.DataIntegrityViolationException;
