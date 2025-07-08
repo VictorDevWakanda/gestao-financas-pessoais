@@ -2,28 +2,40 @@ server:
   servlet:
     context-path: /gestao-financas/api
 
+# spring:
+#   datasource:
+#     driverClassName: org.postgresql.Driver
+#     url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/gestao_financas?currentSchema=gestao_financas}
+#     username: ${DB_USERNAME:postgres}
+#     password: ${DB_PASSWORD:postgres}
+#     type: com.zaxxer.hikari.HikariDataSource
+#     hikari:
+#       poolName: SpringBootJPAHikariCP
+#       minimumIdle: 20
+#       maximumPoolSize: 200
+#       connectionTimeout: 30000
+#       idleTimeout: 30000
+#       maxLifetime: 2000000
+
+  # jpa:
+  #   database-platform: org.hibernate.dialect.PostgreSQLDialect
+  #   show-sql: false
+  #   hibernate:
+  #     ddl-auto: update
+  #     naming:
+  #       physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  #   properties:
+  #     hibernate:
+  #       default_schema: gestao_financas
+
 spring:
   datasource:
-    driverClassName: org.postgresql.Driver
-    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/gestao_financas?currentSchema=gestao_financas}
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:postgres}
-    type: com.zaxxer.hikari.HikariDataSource
-    hikari:
-      poolName: SpringBootJPAHikariCP
-      minimumIdle: 20
-      maximumPoolSize: 200
-      connectionTimeout: 30000
-      idleTimeout: 30000
-      maxLifetime: 2000000
+    url: jdbc:h2:mem:demodb
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
 
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    show-sql: false
-    hibernate:
-      ddl-auto: update
-      naming:
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    properties:
-      hibernate:
-        default_schema: gestao_financas
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
