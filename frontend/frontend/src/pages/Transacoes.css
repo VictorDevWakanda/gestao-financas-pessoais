@@ -1,0 +1,59 @@
+.transacoes-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
+}
+
+.transacoes-container h2 {
+    color: #2d3e50;
+    margin-bottom: 1.5rem;
+}
+
+.transacao-form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.transacao-form input,
+.transacao-form select {
+    padding: 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.transacao-form button {
+    background: #61dafb;
+    color: #2d3e50;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.transacao-form button:hover {
+    background: #2d3e50;
+    color: #fff;
+}
+
+.transacao-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transacao-table th,
+.transacao-table td {
+    padding: 0.7rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.transacao-table th {
+    background: #f7f7f7;
+    color: #2d3e50; }
