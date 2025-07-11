@@ -26,7 +26,7 @@ public class UsuarioInfraRepository implements UsuarioRepository {
         } catch (DataIntegrityViolationException e){
             throw APIException.build(HttpStatus.BAD_REQUEST, "Existem dados duplicados", e);
         }
-        log.info("[finaliza] AlimentoInfraRepository - salva");
+        log.info("[finaliza] UsuarioInfraRepository - salva");
         return usuario;
     }
 
