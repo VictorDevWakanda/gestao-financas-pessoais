@@ -8,23 +8,23 @@ public class UsuarioRequest {
 
     @NotBlank(message = "O nome é obrigatório.")
     @Size(max = 100, message = "O nome deve ter no máximo 100 caracteres.")
-    String nome;
+    private String nome;
 
     @NotBlank(message = "O email é obrigatório.")
     @Email(message = "O email informado não é válido.")
-    String email;
+    private String email;
 
     @NotBlank(message = "A senha é obrigatória.")
     @Size(min = 6, max = 30, message = "A senha deve ter entre 6 e 30 caracteres.")
-    String senha;
+    private String senha;
 
     @NotNull(message = "A data de nascimento é obrigatória.")
-    LocalDate dataNascimento;
+    private LocalDate dataNascimento;
 
     @NotBlank(message = "O CPF é obrigatório.")
-    String cpf;
+    private String cpf;
 
     @Pattern(regexp = "\\d{10,15}", message = "O telefone deve conter entre 10 e 15 dígitos.")
-    String telefone;
+    private String telefone;
 }
 

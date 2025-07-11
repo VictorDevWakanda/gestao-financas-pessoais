@@ -29,7 +29,7 @@ public class Transacao {
     @Enumerated(EnumType.STRING)
     private Tipo tipo;
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_usuario", referencedColumnName = "id")
+    @JoinColumn(name = "id_usuario", referencedColumnName = "idUsuario")
     private Usuario usuario;
     @Column(nullable = false, precision = 19, scale = 2)
     private BigDecimal saldoAnterior;
