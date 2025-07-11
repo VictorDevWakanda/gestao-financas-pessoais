@@ -12,11 +12,11 @@ O **Gestor de Finanças Pessoais** nasceu da necessidade de tornar o controle fi
 
 ## 🏗️ Arquitetura da Solução
 
-- **Interface Gráfica (JavaFX):** Experiência desktop intuitiva e fluida.
-- **Banco de Dados Local (SQLite):** Segurança e privacidade dos dados, armazenados diretamente na máquina do usuário.
+- **Interface Gráfica (React + CSS):** Experiência Web intuitiva e fluida.
+- **Banco de Dados (PostgresSQL):** Segurança e privacidade dos dados, armazenados diretamente na máquina do usuário.
 - **Middleware (Spring Boot):** Serviço intermediário para comunicação entre a interface desktop e APIs externas (ex: WhatsApp).
 - **Integração com WhatsApp & E-mail:** Utilização da API WhatsApp Business Platform para envio automático de notificações e relatórios.
-- **Autenticação Local:** Sistema de login baseado em SQLite, dispensando servidores externos.
+
 
 ---
 
