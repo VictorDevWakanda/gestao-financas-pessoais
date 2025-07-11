@@ -1,9 +1,11 @@
 package com.financas.gestao.gestao_financas.perfil.application.service;
 
+import java.util.List;
 import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
+import com.financas.gestao.gestao_financas.perfil.application.api.PerfilListResponse;
 import com.financas.gestao.gestao_financas.perfil.application.api.PerfilRequest;
 import com.financas.gestao.gestao_financas.perfil.application.api.PerfilResponse;
 import com.financas.gestao.gestao_financas.perfil.application.repository.PerfilRepository;
@@ -29,6 +31,15 @@ public class PerfilApplicationService implements PerfilService{
         Perfil perfil = perfilRepository.salvaPerfil(new Perfil(idUsuario, perfilRequest));
         log.info("[finish] PerfilApplicationService - criarPerfil");
         return new PerfilResponse(perfil.getIdPerfil());
+    }
+
+    @Override
+    public List<PerfilListResponse> listarPerfis(UUID idUsuario) {
+        log.info("[start] PerfilApplicationService - listarPerfis");
+        usuarioService.getUsuarioId(idUsuario);
+        List<Perfil> perfis = perfilRepository.buscaPerfisUsuario(idUsuario);
+        log.info("[finish] PerfilApplicationService - listarPerfis");
+        return PerfilListResponse.converte(perfis);
     }
 
 }

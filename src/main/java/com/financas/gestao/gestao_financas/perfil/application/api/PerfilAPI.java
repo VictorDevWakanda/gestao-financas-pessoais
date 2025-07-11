@@ -26,9 +26,9 @@ public interface PerfilAPI {
     PerfilResponse postPerfil(@PathVariable UUID idUsuario, @Valid @RequestBody PerfilRequest perfilRequest);
     
 
-    // @GetMapping("/{idPerfil}")
-    // @ResponseStatus(code = HttpStatus.OK)
-    // List<PerfilDetalhadoListResponse> getPerfil(@PathVariable UUID idUsuario, @PathVariable UUID idPerfil);
+    @GetMapping
+    @ResponseStatus(code = HttpStatus.OK)
+    List<PerfilListResponse> getPerfil(@PathVariable UUID idUsuario);
 
 
 }
