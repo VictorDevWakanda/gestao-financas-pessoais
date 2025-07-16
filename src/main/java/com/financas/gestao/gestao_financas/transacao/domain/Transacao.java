@@ -1,5 +1,6 @@
 package com.financas.gestao.gestao_financas.transacao.domain;
 
+import com.financas.gestao.gestao_financas.transacao.application.api.TransacaoRequest;
 import com.financas.gestao.gestao_financas.usuario.domain.Usuario;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -35,5 +36,6 @@ public class Transacao {
     private BigDecimal saldoAnterior;
     @Column(nullable = false, precision = 19, scale = 2)
     private BigDecimal saldoAtual;
+
 }
 
